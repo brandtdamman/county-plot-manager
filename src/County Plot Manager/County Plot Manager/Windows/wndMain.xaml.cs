@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace County_Plot_Manager.Windows
+namespace PlotManager.UI.Windows
 {
 	/// <summary>
 	/// Interaction logic for wndMain.xaml

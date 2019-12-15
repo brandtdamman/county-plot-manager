@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace County_Plot_Manager.Classes
+namespace PlotManager.UI.Classes
 {
 	public class ViewModelBase : INotifyPropertyChanged
 	{

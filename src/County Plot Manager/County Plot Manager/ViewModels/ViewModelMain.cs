@@ -1,11 +1,11 @@
-﻿using County_Plot_Manager.Classes;
+﻿using PlotManager.UI.Classes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace County_Plot_Manager.ViewModels
+namespace PlotManager.UI.ViewModels
 {
 	public class ViewModelMain:ViewModelBase
 	{
