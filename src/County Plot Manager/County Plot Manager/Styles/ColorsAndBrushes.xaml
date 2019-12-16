@@ -1,0 +1,51 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:PlotManager.UI.Styles">
+
+
+
+	<!--Bright Blue-->
+	<Color x:Key="color_Base_Dark"
+				 A="255" R="6" G="74" B="158"/>
+	<Color x:Key="color_Base_100" 
+				 A="255" R="9" G="101" B="218"/>
+	<Color x:Key="color_Base_75"
+				 A="255" R="70" G="140" B="228"/>
+	<Color x:Key="color_Base_50"
+				 A="255" R="131" G="177" B="236"/>
+	<Color x:Key="color_Base_25"
+				 A="255" R="193" G="216" B="245"/>
+
+
+
+	<SolidColorBrush x:Key="brush_Base_Dark"
+		Color="{StaticResource color_Base_Dark}"/>
+	<SolidColorBrush x:Key="brush_Base_100"
+		Color="{StaticResource color_Base_100}"/>
+	<SolidColorBrush x:Key="brush_Base_75"
+		Color="{StaticResource color_Base_75}"/>
+	<SolidColorBrush x:Key="brush_Base_50"
+		Color="{StaticResource color_Base_50}"/>
+	<SolidColorBrush x:Key="brush_Base_25"
+		Color="{StaticResource color_Base_25}"/>
+
+
+
+	<SolidColorBrush x:Key="brush_Disabled"
+		Color="#80808080"/>
+
+
+
+	<!--Brush used for the title bar of the custom window styles.
+	This is a subtle gradient to provide a very slight 3D feel to
+	the top title bar of the window.-->
+	<LinearGradientBrush x:Key="brush_TitleBar"
+		StartPoint="0.5,0"
+		EndPoint="0.5,1">
+		<GradientStop Offset="0" Color="{StaticResource color_Base_100}"/>
+		<GradientStop Offset="0.15" Color="{StaticResource color_Base_Dark}"/>
+		<GradientStop Offset="1" Color="{StaticResource color_Base_Dark}"/>
+	</LinearGradientBrush>
+
+
+</ResourceDictionary>

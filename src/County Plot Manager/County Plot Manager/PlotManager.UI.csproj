@@ -66,6 +66,10 @@
     <Compile Include="Classes\RelayCommand.cs" />
     <Compile Include="Classes\RelayCommand_Param.cs" />
     <Compile Include="Classes\ViewModelBase.cs" />
+    <Page Include="Styles\ColorsAndBrushes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Windows\wndMain.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -97,5 +101,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
