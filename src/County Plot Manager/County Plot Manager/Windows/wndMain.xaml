@@ -4,9 +4,16 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PlotManager.UI.Windows"
-        mc:Ignorable="d"
+        mc:Ignorable="d" Style="{DynamicResource MyWindowStyle}"
         Title="Plot Manager" Height="450" Width="800">
-	<Grid>
 
-	</Grid>
+	<Window.Resources>
+		<Style x:Key="MyWindowStyle" TargetType="{x:Type Window}" 
+           BasedOn="{StaticResource WindowStandard}"/>
+	</Window.Resources>
+
+			<Grid>
+
+			</Grid>
+
 </Window>

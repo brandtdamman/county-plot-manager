@@ -1,0 +1,99 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:PlotManager.UI.Styles">
+
+	<ResourceDictionary.MergedDictionaries>
+		<ResourceDictionary Source="TextBlock.xaml"/>
+	</ResourceDictionary.MergedDictionaries>
+
+
+	<!--Base presenter style.  Based on standard text style and 12pt font.
+	All other presenters can be based on this style and then override properties
+	if a different size of text is needed.  Text color is not set as a default
+	because that would sometimes make it necessary to override it at the control
+	or UI level.  A content presenter should inherit most of its properties from
+	the parent control.-->
+	<Style x:Key="PresenterBase" BasedOn="{StaticResource Text_Base}"
+				 TargetType="{x:Type ContentPresenter}">
+		<Setter Property="TextBlock.FontSize"
+						Value="12"/>
+		<Setter Property="SnapsToDevicePixels"
+						Value="True"/>
+	</Style>
+
+	<!--11pt content presenter.-->
+	<Style x:Key="PresenterSmallFont"
+				 TargetType="{x:Type ContentPresenter}"
+				 BasedOn="{StaticResource PresenterBase}">
+		<Setter Property="TextBlock.FontSize"
+						Value="11"/>
+	</Style>
+
+	<!--13pt content presenter.-->
+	<Style x:Key="PresenterMediumFont"
+				 TargetType="{x:Type ContentPresenter}"
+				 BasedOn="{StaticResource PresenterBase}">
+		<Setter Property="TextBlock.FontSize"
+						Value="13"/>
+	</Style>
+
+	<!--14pt content presenter.-->
+	<Style x:Key="PresenterLargeFont"
+				 TargetType="{x:Type ContentPresenter}"
+				 BasedOn="{StaticResource PresenterBase}">
+		<Setter Property="TextBlock.FontSize"
+						Value="14"/>
+		<Setter Property="TextBlock.TextWrapping"
+						Value="Wrap"/>
+	</Style>
+
+	<!--Presenter used inside a command button.-->
+	<Style x:Key="PresenterButton"
+				 TargetType="{x:Type ContentPresenter}"
+				 BasedOn="{StaticResource PresenterMediumFont}">
+		<Setter Property="TextBlock.FontWeight"
+						Value="Bold"/>
+		<Setter Property="HorizontalAlignment"
+						Value="Center"/>
+		<Setter Property="VerticalAlignment"
+						Value="Center"/>
+		<Setter Property="Margin"
+						Value="4,1"/>
+	</Style>
+
+	<!--Presenter used inside a command button.-->
+	<Style x:Key="PresenterButtonSmall"
+				 TargetType="{x:Type ContentPresenter}"
+				 BasedOn="{StaticResource PresenterSmallFont}">
+		<Setter Property="TextBlock.FontWeight"
+						Value="Normal"/>
+		<Setter Property="HorizontalAlignment"
+						Value="Center"/>
+		<Setter Property="VerticalAlignment"
+						Value="Center"/>
+		<Setter Property="Margin"
+						Value="2,1"/>
+	</Style>
+
+	<!--Presenter used in the custom LeftNav control, top-level.-->
+	<Style x:Key="PresenterLeftNavMain"
+				 TargetType="{x:Type ContentPresenter}"
+				 BasedOn="{StaticResource PresenterLargeFont}">
+		<Setter Property="VerticalAlignment"
+						Value="Center"/>
+		<Setter Property="TextBlock.TextWrapping"
+						Value="Wrap"/>
+	</Style>
+
+	<!--Presenter used in the custom LeftNav control, sub-level.-->
+	<Style x:Key="PresenterLeftNavSub"
+				 TargetType="{x:Type ContentPresenter}"
+				 BasedOn="{StaticResource PresenterMediumFont}">
+		<Setter Property="VerticalAlignment"
+						Value="Center"/>
+		<Setter Property="TextBlock.TextWrapping"
+						Value="Wrap"/>
+	</Style>
+
+
+</ResourceDictionary>

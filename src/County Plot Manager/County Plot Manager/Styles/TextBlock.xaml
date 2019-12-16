@@ -1,0 +1,277 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:PlotManager.UI.Styles">
+
+
+
+	<ResourceDictionary.MergedDictionaries>
+		<ResourceDictionary Source="ColorsAndBrushes.xaml"/>
+	</ResourceDictionary.MergedDictionaries>
+
+	<!--All text styles are left-aligned by default.  Alternate alignments
+	should be handled at the UI level.-->
+
+	<!--Base Text Style.  Font-family only.  This lets the font in the
+    entire application be changed in one place.-->
+	<Style x:Key="Text_Base">
+		<Setter Property="TextBlock.FontFamily"
+                Value="Segoe UI Semibold"/>
+	</Style>
+
+	<!--Base black text-->
+	<Style x:Key="Text_Black"
+				 TargetType="{x:Type TextBlock}"
+				 BasedOn="{StaticResource Text_Base}">
+		<Setter Property="Foreground"
+						Value="Black"/>
+	</Style>
+
+	<!--Base black-75% text-->
+	<Style x:Key="Text_Black75"
+				 TargetType="{x:Type TextBlock}"
+				 BasedOn="{StaticResource Text_Base}">
+		<Setter Property="Foreground"
+						Value="#FF404040"/>
+	</Style>
+
+	<!--Base red text, typically for error messages and warnings-->
+	<Style x:Key="Text_Red"
+				 TargetType="{x:Type TextBlock}"
+				 BasedOn="{StaticResource Text_Base}">
+		<Setter Property="Foreground"
+						Value="#FFFF0000"/>
+	</Style>
+
+	<!--Base white text, used on dark backgrounds-->
+	<Style x:Key="Text_White"
+				 TargetType="{x:Type TextBlock}"
+				 BasedOn="{StaticResource Text_Base}">
+		<Setter Property="Foreground"
+						Value="White"/>
+	</Style>
+
+	<!--Main title text, black-->
+	<Style x:Key="TextTitle" 
+				 TargetType="{x:Type TextBlock}"
+				 BasedOn="{StaticResource Text_Black}">
+		<Setter Property="FontWeight" 
+						Value="Bold"/>
+		<Setter Property="FontSize"
+						Value="20"/>
+		<Setter Property="Margin"
+						Value="10,4,0,2"/>
+		<Setter Property="TextAlignment"
+						Value="Left"/>
+	</Style>
+
+	<!--Main title text, white-->
+	<Style x:Key="TextTitleWhite" 
+				 TargetType="{x:Type TextBlock}"
+				 BasedOn="{StaticResource Text_White}">
+		<Setter Property="FontWeight" 
+						Value="Bold"/>
+		<Setter Property="FontSize"
+						Value="20"/>
+		<Setter Property="Margin"
+						Value="10,4,0,2"/>
+		<Setter Property="TextAlignment"
+						Value="Left"/>
+	</Style>
+
+	<!--Secondary title text, black75-->
+	<Style x:Key="TextTitle2" 
+				 TargetType="{x:Type TextBlock}"
+				 BasedOn="{StaticResource Text_Black75}">
+		<Setter Property="FontSize"
+						Value="20"/>
+		<Setter Property="Margin"
+						Value="10,2,0,2"/>
+		<Setter Property="TextAlignment"
+						Value="Left"/>
+	</Style>
+
+	<!--Secondary title text, white-->
+	<Style x:Key="TextTitle2White" 
+				 TargetType="{x:Type TextBlock}"
+				 BasedOn="{StaticResource Text_White}">
+		<Setter Property="FontSize"
+						Value="20"/>
+		<Setter Property="Margin"
+						Value="10,2,0,2"/>
+		<Setter Property="TextAlignment"
+						Value="Left"/>
+	</Style>
+
+	<!--13pt text used for image captions-->
+	<Style x:Key="TextCaption"
+				 TargetType="{x:Type TextBlock}"
+				 BasedOn="{StaticResource Text_Black75}">
+		<Setter Property="FontSize"
+						Value="13"/>
+		<Setter Property="FontWeight"
+						Value="Bold"/>
+		<Setter Property="TextWrapping"
+						Value="Wrap"/>
+		<Setter Property="Margin"
+						Value="10,5"/>
+	</Style>
+
+	<!--Simple text style used for labeling UI components and providing
+	inctructions on the UI.  Analogous to the 'normal' style in Word.-->
+	<Style x:Key="TextSimple"
+				 TargetType="{x:Type TextBlock}"
+				 BasedOn="{StaticResource Text_Black}">
+		<Setter Property="FontSize"
+						Value="12"/>
+		<Setter Property="VerticalAlignment"
+						Value="Center"/>
+		<Setter Property="HorizontalAlignment"
+						Value="Left"/>
+		<Setter Property="TextWrapping"
+						Value="Wrap"/>
+		<Setter Property="Margin"
+						Value="5,5,0,5"/>
+	</Style>
+
+	<!--Simple text, in white.  Used on UI elements with dark background-->
+	<Style x:Key="TextSimpleWhite"
+				 TargetType="{x:Type TextBlock}"
+				 BasedOn="{StaticResource Text_White}">
+		<Setter Property="FontSize"
+						Value="12"/>
+		<Setter Property="VerticalAlignment"
+						Value="Center"/>
+		<Setter Property="HorizontalAlignment"
+						Value="Left"/>
+		<Setter Property="TextWrapping"
+						Value="Wrap"/>
+		<Setter Property="Margin"
+						Value="5,5,0,5"/>
+	</Style>
+
+
+	<Style x:Key="TextSmall"
+				 TargetType="{x:Type TextBlock}"
+				 BasedOn="{StaticResource Text_Black}">
+		<Setter Property="FontSize"
+						Value="11"/>
+		<Setter Property="VerticalAlignment"
+						Value="Center"/>
+		<Setter Property="HorizontalAlignment"
+						Value="Left"/>
+		<Setter Property="TextWrapping"
+						Value="Wrap"/>
+	</Style>
+
+
+	<Style x:Key="TextSmallBold"
+				 TargetType="{x:Type TextBlock}"
+				 BasedOn="{StaticResource TextSmall}">
+		<Setter Property="FontWeight"
+						Value="Bold"/>
+	</Style>
+
+
+	<!--Similar to caption text, but not bold.  Typically used for a list
+	of items in a combobox or listbox control.  Provides slightly more
+	emphasis than TextSimple.-->
+	<Style x:Key="TextOption"
+				 TargetType="{x:Type TextBlock}"
+				 BasedOn="{StaticResource Text_Black75}">
+		<Setter Property="FontSize"
+						Value="13"/>
+		<Setter Property="VerticalAlignment"
+						Value="Center"/>
+		<Setter Property="HorizontalAlignment"
+						Value="Left"/>
+		<Setter Property="TextWrapping"
+						Value="Wrap"/>
+	</Style>
+
+	<!--White option text.  This would normally be used for and item that is 
+	currently selected in a listbox or combobox, having a dark background-->
+	<Style x:Key="TextOptionWhite"
+				 TargetType="{x:Type TextBlock}"
+				 BasedOn="{StaticResource Text_White}">
+		<Setter Property="FontSize"
+						Value="13"/>
+		<Setter Property="VerticalAlignment"
+						Value="Center"/>
+		<Setter Property="HorizontalAlignment"
+						Value="Left"/>
+		<Setter Property="TextWrapping"
+						Value="Wrap"/>
+	</Style>
+
+	<!--Text used to empahsize an area, but smaller than title text.-->
+	<Style x:Key="TextEmphasis"
+				 TargetType="{x:Type TextBlock}"
+				 BasedOn="{StaticResource Text_Black}">
+		<Setter Property="FontSize"
+						Value="14"/>
+		<Setter Property="FontWeight"
+						Value="Bold"/>
+		<Setter Property="VerticalAlignment"
+						Value="Center"/>
+		<Setter Property="HorizontalAlignment"
+						Value="Left"/>
+		<Setter Property="TextWrapping"
+						Value="Wrap"/>
+	</Style>
+
+	<!--White emphasis text.-->
+	<Style x:Key="TextEmphasisWhite"
+				 TargetType="{x:Type TextBlock}"
+				 BasedOn="{StaticResource Text_White}">
+		<Setter Property="FontSize"
+						Value="14"/>
+		<Setter Property="FontWeight"
+						Value="Bold"/>
+		<Setter Property="VerticalAlignment"
+						Value="Center"/>
+		<Setter Property="HorizontalAlignment"
+						Value="Left"/>
+		<Setter Property="TextWrapping"
+						Value="Wrap"/>
+	</Style>
+
+	<!--Standard web default for hyperlinks.-->
+	<Style x:Key="TextHyperLink"
+				 TargetType="{x:Type TextBlock}"
+				 BasedOn="{StaticResource Text_Base}">
+		<Setter Property="FontSize"
+						Value="13"/>
+		<Setter Property="Foreground"
+						Value="Blue"/>
+		<Setter Property="VerticalAlignment"
+						Value="Center"/>
+		<Setter Property="HorizontalAlignment"
+						Value="Left"/>
+		<Setter Property="TextWrapping"
+						Value="Wrap"/>
+		<Setter Property="TextDecorations"
+						Value="Underline"/>
+	</Style>
+
+	<!--Standard web default for visited hyperlinks.-->
+	<Style x:Key="TextHyperLinkVisited"
+				 TargetType="{x:Type TextBlock}"
+				 BasedOn="{StaticResource Text_Base}">
+		<Setter Property="FontSize"
+						Value="13"/>
+		<Setter Property="Foreground"
+						Value="Purple"/>
+		<Setter Property="VerticalAlignment"
+						Value="Center"/>
+		<Setter Property="HorizontalAlignment"
+						Value="Left"/>
+		<Setter Property="TextWrapping"
+						Value="Wrap"/>
+		<Setter Property="TextDecorations"
+						Value="Underline"/>
+	</Style>
+
+
+
+
+</ResourceDictionary>
