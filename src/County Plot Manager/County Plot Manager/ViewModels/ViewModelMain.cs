@@ -7,7 +7,9 @@ using System.Threading.Tasks;
 
 namespace PlotManager.UI.ViewModels
 {
-	public class ViewModelMain:ViewModelBase
+	public class ViewModelMain : ViewModelBase
 	{
+
+
 	}
 }
