@@ -55,6 +55,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Classes\Converters\IntToFontSizeConverter.cs" />
     <Compile Include="Styles\UserControls\CloseButton.xaml.cs">
       <DependentUpon>CloseButton.xaml</DependentUpon>
     </Compile>
@@ -63,6 +64,9 @@
     </Compile>
     <Compile Include="UserControls\Plot.xaml.cs">
       <DependentUpon>Plot.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PlotGroup.xaml.cs">
+      <DependentUpon>PlotGroup.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControls\PlotMap.xaml.cs">
       <DependentUpon>PlotMap.xaml</DependentUpon>
@@ -73,7 +77,13 @@
     <Compile Include="UserControls\SectionMap.xaml.cs">
       <DependentUpon>SectionMap.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\Tenant.xaml.cs">
+      <DependentUpon>Tenant.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewModels\ViewModelMain.cs" />
+    <Compile Include="ViewModels\ViewModelPlot.cs" />
+    <Compile Include="ViewModels\ViewModelPlotGroup.cs" />
+    <Compile Include="ViewModels\ViewModelSection.cs" />
     <Compile Include="Windows\wndMain.xaml.cs">
       <DependentUpon>wndMain.xaml</DependentUpon>
     </Compile>
@@ -128,6 +138,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="UserControls\PlotGroup.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="UserControls\PlotMap.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -137,6 +151,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UserControls\SectionMap.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\Tenant.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -171,6 +189,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\PlotManager.Model\PlotManager.Model.csproj">
+      <Project>{AE3969B0-72EC-47C9-8513-369E4E263816}</Project>
+      <Name>PlotManager.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

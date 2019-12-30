@@ -10,7 +10,7 @@ namespace PlotManager.Model
 	{
 		public string ID { get; set; }
 		public Owner Owner { get; set; }
-		public Tenant Tenant { get; set; }
+		public List<Tenant> Tenants { get; set; }
 
 	}
 }
