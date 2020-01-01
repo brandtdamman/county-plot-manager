@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PlotManager.UI.Classes
+namespace PlotManager.UI.Classes.Base
 {
 	public class ViewModelBase : INotifyPropertyChanged
 	{

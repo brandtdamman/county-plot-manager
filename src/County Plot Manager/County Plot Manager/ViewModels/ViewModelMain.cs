@@ -1,4 +1,4 @@
-﻿using PlotManager.UI.Classes;
+﻿using PlotManager.UI.Classes.Base;
 using System;
 using System.Collections.Generic;
 using System.Linq;

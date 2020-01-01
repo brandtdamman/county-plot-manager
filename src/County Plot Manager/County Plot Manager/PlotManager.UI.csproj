@@ -55,6 +55,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Classes\Converters\BoolsToMarginConverter.cs" />
     <Compile Include="Classes\Converters\IntToFontSizeConverter.cs" />
     <Compile Include="Classes\Converters\IntToHeightConverter.cs" />
     <Compile Include="Styles\UserControls\CloseButton.xaml.cs">
@@ -95,9 +96,9 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Classes\RelayCommand.cs" />
-    <Compile Include="Classes\RelayCommand_Param.cs" />
-    <Compile Include="Classes\ViewModelBase.cs" />
+    <Compile Include="Classes\Base\RelayCommand.cs" />
+    <Compile Include="Classes\Base\RelayCommand_Param.cs" />
+    <Compile Include="Classes\Base\ViewModelBase.cs" />
     <Page Include="Styles\Button.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

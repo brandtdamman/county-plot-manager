@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 
-namespace PlotManager.UI.Classes
+namespace PlotManager.UI.Classes.Base
 {
 	public class RelayCommand<T> : ICommand
 	{

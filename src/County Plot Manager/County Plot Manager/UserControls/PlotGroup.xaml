@@ -4,13 +4,27 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:PlotManager.UI.UserControls"
-             mc:Ignorable="d" Width="100">
+						 xmlns:Converters="clr-namespace:PlotManager.UI.Classes.Converters"
+             mc:Ignorable="d">
 
-	<Grid>
+	<UserControl.Resources>
+		<Converters:BoolsToMarginConverter x:Key="BoolsToMarginConverter"/>
+	</UserControl.Resources>
+
+	<Grid Width="100">
+
+		<Grid.Margin>
+			<MultiBinding Converter="{StaticResource BoolsToMarginConverter}">
+				<Binding Path="HasBottomMargin"/>
+				<Binding Path="HasRightMargin"/>
+			</MultiBinding>
+		</Grid.Margin>
+
 		<Grid.RowDefinitions>
 			<RowDefinition Height="Auto"/>
 			<RowDefinition Height="*"/>
 		</Grid.RowDefinitions>
+
 		<Border Grid.Row="0" Background="{StaticResource brush_Base_100}"
 						BorderBrush="{StaticResource brush_Base_100}"
 						BorderThickness="1">
@@ -23,7 +37,7 @@
 										ItemsSource="{Binding Tenants, FallbackValue=abcdef}">
 			<ItemsControl.ItemTemplate>
 				<DataTemplate>
-						<local:Plot/>
+					<local:Plot/>
 				</DataTemplate>
 			</ItemsControl.ItemTemplate>
 		</ItemsControl>

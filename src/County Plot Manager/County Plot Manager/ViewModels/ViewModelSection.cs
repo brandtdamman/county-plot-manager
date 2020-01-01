@@ -1,5 +1,5 @@
 ﻿using PlotManager.Model;
-using PlotManager.UI.Classes;
+using PlotManager.UI.Classes.Base;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -97,19 +97,19 @@ namespace PlotManager.UI.ViewModels
 			}
 		}
 
-		private List<PlotGroup> plotGroups;
-		public List<PlotGroup> PlotGroups
+		private List<PlotGroup> plotGroupColumns;
+		public List<PlotGroup> PlotGroupColumns
 		{
 			get
 			{
-				return plotGroups;
+				return plotGroupColumns;
 			}
 			set
 			{
-				if (value != plotGroups)
+				if (value != plotGroupColumns)
 				{
-					plotGroups = value;
-					NotifyPropertyChanged("PlotGroups");
+					plotGroupColumns = value;
+					NotifyPropertyChanged("PlotGroupColumns");
 				}
 			}
 		}
