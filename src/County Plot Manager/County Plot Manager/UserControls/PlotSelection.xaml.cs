@@ -18,9 +18,9 @@ namespace PlotManager.UI.UserControls
 	/// <summary>
 	/// Interaction logic for PlotMap.xaml
 	/// </summary>
-	public partial class PlotMap : UserControl
+	public partial class PlotSelection : UserControl
 	{
-		public PlotMap()
+		public PlotSelection()
 		{
 			InitializeComponent();
 		}

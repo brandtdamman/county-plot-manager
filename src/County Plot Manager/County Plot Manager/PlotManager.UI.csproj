@@ -72,8 +72,8 @@
     <Compile Include="UserControls\PlotGroupSimple.xaml.cs">
       <DependentUpon>PlotGroupSimple.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\PlotMap.xaml.cs">
-      <DependentUpon>PlotMap.xaml</DependentUpon>
+    <Compile Include="UserControls\PlotSelection.xaml.cs">
+      <DependentUpon>PlotSelection.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControls\Section.xaml.cs">
       <DependentUpon>Section.xaml</DependentUpon>
@@ -150,7 +150,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UserControls\PlotMap.xaml">
+    <Page Include="UserControls\PlotSelection.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
