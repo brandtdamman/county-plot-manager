@@ -1,0 +1,20 @@
+﻿<UserControl x:Class="PlotManager.UI.UserControls.FlagPole"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:PlotManager.UI.UserControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="150" d:DesignWidth="92">
+
+
+	<Grid>
+		<Canvas>
+			<Path Fill="{StaticResource brush_Base_25}"
+            Data="m 13.237,77.481 l65.892,0 l-24.185,53.521 
+                  c -6.8,4.8 -10.723,4.8 -17.523,0 z"/>
+			<Ellipse Fill="{StaticResource brush_Base_50}" 
+                Height="92" Width="92"/>
+		</Canvas>
+	</Grid>
+</UserControl>
