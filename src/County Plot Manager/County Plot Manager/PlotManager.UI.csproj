@@ -64,6 +64,9 @@
     <Compile Include="Styles\UserControls\MinMaxClose.xaml.cs">
       <DependentUpon>MinMaxClose.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\FlagPole.xaml.cs">
+      <DependentUpon>FlagPole.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\Plot.xaml.cs">
       <DependentUpon>Plot.xaml</DependentUpon>
     </Compile>
@@ -136,6 +139,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Styles\Window.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\FlagPole.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

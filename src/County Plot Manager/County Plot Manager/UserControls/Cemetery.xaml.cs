@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace PlotManager.UI.UserControls
 {
 	/// <summary>
-	/// Interaction logic for SectionMap.xaml
+	/// Interaction logic for Cemetery.xaml
 	/// </summary>
-	public partial class SectionMap : UserControl
+	public partial class Cemetery : UserControl
 	{
-		public SectionMap()
+		public Cemetery()
 		{
 			InitializeComponent();
 		}
