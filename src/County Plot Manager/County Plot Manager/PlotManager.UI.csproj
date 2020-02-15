@@ -64,6 +64,9 @@
     <Compile Include="Styles\UserControls\MinMaxClose.xaml.cs">
       <DependentUpon>MinMaxClose.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\Cemetery.xaml.cs">
+      <DependentUpon>Cemetery.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\FlagPole.xaml.cs">
       <DependentUpon>FlagPole.xaml</DependentUpon>
     </Compile>
@@ -81,9 +84,6 @@
     </Compile>
     <Compile Include="UserControls\Section.xaml.cs">
       <DependentUpon>Section.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="UserControls\SectionMap.xaml.cs">
-      <DependentUpon>SectionMap.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControls\Tenant.xaml.cs">
       <DependentUpon>Tenant.xaml</DependentUpon>
@@ -142,6 +142,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="UserControls\Cemetery.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="UserControls\FlagPole.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -163,10 +167,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UserControls\Section.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="UserControls\SectionMap.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
