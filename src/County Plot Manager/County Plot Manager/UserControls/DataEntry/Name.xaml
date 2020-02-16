@@ -1,0 +1,41 @@
+﻿<UserControl x:Class="PlotManager.UI.UserControls.DataEntry.Name"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:PlotManager.UI.UserControls.DataEntry"
+             mc:Ignorable="d" Background="{StaticResource brush_Base_25}">
+
+	<UserControl.Resources>
+		<Style TargetType="{x:Type TextBlock}"
+					 BasedOn="{StaticResource TextCaption}">
+			<Setter Property="Margin"
+							Value="2"/>
+		</Style>
+		<Style TargetType="{x:Type TextBox}"
+					 BasedOn="{StaticResource  TextBoxSimple}">
+			<Setter Property="MinWidth"
+							Value="60"/>
+			<Setter Property="MinHeight"
+							Value="25"/>
+		</Style>
+	</UserControl.Resources>
+
+
+	<Grid>
+		<StackPanel Orientation="Horizontal" Margin="5">
+			<StackPanel Margin="10,0">
+				<TextBlock Text="First:"/>
+				<TextBox Text="{Binding Path=FirstName}" TabIndex="0"/>
+			</StackPanel>
+			<StackPanel Margin="10,0">
+				<TextBlock Text="Middle:"/>
+				<TextBox Text="{Binding Path=MiddleNameOrInitial}" TabIndex="1"/>
+			</StackPanel>
+			<StackPanel Margin="10,0">
+				<TextBlock Text="Last:"/>
+				<TextBox Text="{Binding Path=LastName}" TabIndex="2"/>
+			</StackPanel>
+		</StackPanel>
+	</Grid>
+</UserControl>

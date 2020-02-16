@@ -12,8 +12,21 @@
            BasedOn="{StaticResource WindowStandard}"/>
 	</Window.Resources>
 
-			<Grid>
-
-			</Grid>
+	<Grid>
+		<TabControl>
+			<TabItem Header="Plots">
+			</TabItem>
+			<TabItem Header="Data Entry">
+				<TabControl TabStripPlacement="Left">
+					<TabItem Header="Plot Owners">
+					</TabItem>
+					<TabItem Header="Tenants">
+					</TabItem>
+					<TabItem Header="Plots">
+					</TabItem>
+				</TabControl>
+			</TabItem>
+		</TabControl>
+	</Grid>
 
 </Window>

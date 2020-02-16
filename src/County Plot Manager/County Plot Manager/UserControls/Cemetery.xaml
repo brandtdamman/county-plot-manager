@@ -7,10 +7,49 @@
              mc:Ignorable="d" >
 
 	<ItemsControl ItemsSource="{Binding Path=ListSections, 
-															FallbackValue='123'}">
+															FallbackValue='1'}">
 		<ItemsControl.ItemsPanel>
 			<ItemsPanelTemplate>
-				<StackPanel Orientation="Horizontal"/>
+				<Grid>
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="Auto"/>
+						<ColumnDefinition Width="Auto"/>
+						<ColumnDefinition Width="Auto"/>
+						<ColumnDefinition Width="Auto"/>
+						<ColumnDefinition Width="Auto"/>
+						<ColumnDefinition Width="Auto"/>
+						<ColumnDefinition Width="Auto"/>
+						<ColumnDefinition Width="Auto"/>
+						<ColumnDefinition Width="Auto"/>
+						<ColumnDefinition Width="Auto"/>
+						<ColumnDefinition Width="Auto"/>
+						<ColumnDefinition Width="Auto"/>
+						<ColumnDefinition Width="Auto"/>
+						<ColumnDefinition Width="Auto"/>
+						<ColumnDefinition Width="Auto"/>
+						<ColumnDefinition Width="Auto"/>
+					</Grid.ColumnDefinitions>
+					<Grid.RowDefinitions>
+						<RowDefinition Height="Auto"/>
+						<RowDefinition Height="Auto"/>
+						<RowDefinition Height="Auto"/>
+						<RowDefinition Height="Auto"/>
+						<RowDefinition Height="Auto"/>
+						<RowDefinition Height="Auto"/>
+						<RowDefinition Height="Auto"/>
+						<RowDefinition Height="Auto"/>
+						<RowDefinition Height="Auto"/>
+						<RowDefinition Height="Auto"/>
+						<RowDefinition Height="Auto"/>
+						<RowDefinition Height="Auto"/>
+						<RowDefinition Height="Auto"/>
+						<RowDefinition Height="Auto"/>
+						<RowDefinition Height="Auto"/>
+						<RowDefinition Height="Auto"/>
+						<RowDefinition Height="Auto"/>
+						<RowDefinition Height="Auto"/>
+					</Grid.RowDefinitions>
+				</Grid>
 			</ItemsPanelTemplate>
 		</ItemsControl.ItemsPanel>
 
