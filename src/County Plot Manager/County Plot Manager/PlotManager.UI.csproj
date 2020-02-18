@@ -67,6 +67,9 @@
     <Compile Include="UserControls\Cemetery.xaml.cs">
       <DependentUpon>Cemetery.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\DataEntry\ContactInfo.xaml.cs">
+      <DependentUpon>ContactInfo.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\DataEntry\Name.xaml.cs">
       <DependentUpon>Name.xaml</DependentUpon>
     </Compile>
@@ -149,6 +152,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UserControls\Cemetery.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\DataEntry\ContactInfo.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

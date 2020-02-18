@@ -1,0 +1,52 @@
+﻿<UserControl x:Class="PlotManager.UI.UserControls.DataEntry.ContactInfo"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:PlotManager.UI.UserControls.DataEntry"
+             mc:Ignorable="d" Background="{StaticResource brush_Base_25}">
+
+	<UserControl.Resources>
+		<Style TargetType="{x:Type TextBlock}"
+					 BasedOn="{StaticResource TextCaption}">
+			<Setter Property="Margin"
+							Value="2"/>
+		</Style>
+		<Style TargetType="{x:Type TextBox}"
+					 BasedOn="{StaticResource  TextBoxSimple}">
+			<Setter Property="MinWidth"
+							Value="60"/>
+			<Setter Property="MinHeight"
+							Value="25"/>
+		</Style>
+	</UserControl.Resources>
+
+	<Grid>
+		<StackPanel>
+			<TextBlock Text="Address Line 1"/>
+			<TextBox Text="{Binding Path=AddressLine1}"/>
+			<TextBlock Text="Address Line 2"/>
+			<TextBox Text="{Binding Path=AddressLine2}"/>
+			<TextBlock Text="City"/>
+			<TextBox Text="{Binding Path=City}"/>
+			<TextBlock Text="State"/>
+			<TextBox Text="{Binding Path=State}"/>
+			<TextBlock Text="Zip Code"/>
+			<TextBox Text="{Binding Path=ZipCode}"/>
+			<TextBlock Text="Country"/>
+			<TextBox Text="{Binding Path=Country}"/>
+			<!--public string AddressLine1 { get; set; }
+		public string AddressLine2 { get; set; }
+		public string City { get; set; }
+		public string State { get; set; }
+		public string ZipCode { get; set; }
+		public string Country { get; set; }-->
+
+			<!--public Address Address { get; set; }
+		public Dictionary
+			<string, int>PhoneNumbers { get; set; }
+		public Dictionary
+				<string, string>emails { get; set; }-->
+		</StackPanel>
+    </Grid>
+</UserControl>
