@@ -22,7 +22,10 @@
 	</UserControl.Resources>
 
 	<Grid>
-		<StackPanel>
+		<TextBlock Text="Address" FontSize="20" Margin="2,-3,0,0" 
+				Foreground="{StaticResource brush_Base_75}"/>
+		<StackPanel Orientation="Horizontal" Margin="5,15,5,2">
+		<StackPanel Margin="5">
 			<TextBlock Text="Address Line 1"/>
 			<TextBox Text="{Binding Path=AddressLine1}"/>
 			<TextBlock Text="Address Line 2"/>
@@ -47,6 +50,12 @@
 			<string, int>PhoneNumbers { get; set; }
 		public Dictionary
 				<string, string>emails { get; set; }-->
+			</StackPanel>
+			<StackPanel Margin="5">
+				<TextBlock Text="Address Line 1"/>
+				<TextBox Text="{Binding Path=AddressLine1}"/>
+
+			</StackPanel>
 		</StackPanel>
-    </Grid>
+	</Grid>
 </UserControl>
