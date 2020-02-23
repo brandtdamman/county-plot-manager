@@ -70,6 +70,12 @@
     <Compile Include="UserControls\DataEntry\ContactInfo.xaml.cs">
       <DependentUpon>ContactInfo.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\DataEntry\Email.xaml.cs">
+      <DependentUpon>Email.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\DataEntry\EnterEmail.xaml.cs">
+      <DependentUpon>EnterEmail.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\DataEntry\Name.xaml.cs">
       <DependentUpon>Name.xaml</DependentUpon>
     </Compile>
@@ -156,6 +162,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UserControls\DataEntry\ContactInfo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\DataEntry\Email.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\DataEntry\EnterEmail.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
