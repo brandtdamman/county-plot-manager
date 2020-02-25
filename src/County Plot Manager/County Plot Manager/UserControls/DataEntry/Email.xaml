@@ -1,19 +1,22 @@
-﻿<UserControl x:Class="PlotManager.UI.UserControls.DataEntry.Email"
-             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+﻿<UserControl xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:PlotManager.UI.UserControls.DataEntry"
-             mc:Ignorable="d" Background="{StaticResource brush_Base_25}">
+             xmlns:Converters="clr-namespace:PlotManager.UI.Classes.Converters" 
+						x:Class="PlotManager.UI.UserControls.DataEntry.Email"
+						Background="{StaticResource brush_Base_25}"
+             mc:Ignorable="d">
 
 	<UserControl.Resources>
+		<Converters:IntToBoolConverter x:Key="IntToBoolConverter"/>
 		<Style TargetType="{x:Type TextBlock}"
 					 BasedOn="{StaticResource TextCaption}">
 			<Setter Property="Margin"
 							Value="2"/>
 		</Style>
 		<Style TargetType="{x:Type TextBox}"
-					 BasedOn="{StaticResource  TextBoxSimple}">
+					 BasedOn="{StaticResource TextBoxSimple}">
 			<Setter Property="MinWidth"
 							Value="60"/>
 			<Setter Property="MinHeight"
@@ -21,11 +24,12 @@
 		</Style>
 	</UserControl.Resources>
 
-		
-			<StackPanel Orientation="Horizontal">
-		<RadioButton VerticalAlignment="Center" Margin="5"/>
-		<TextBlock Text="email" VerticalAlignment="Center"/>
-		<TextBox Margin="0,5,5,5" Text="{Binding Path=email}"/>
+
+	<StackPanel Orientation="Horizontal">
+		<RadioButton VerticalAlignment="Center" Margin="5"
+		IsChecked="{Binding IsPrimary, Converter={StaticResource IntToBoolConverter}}"/>
+		<TextBlock Text="email" VerticalAlignment="Center" Margin="0,5,2,5"/>
+		<TextBox Margin="5" Text="{Binding EmailAddress}" MinWidth="150"/>
 	</StackPanel>
 
 

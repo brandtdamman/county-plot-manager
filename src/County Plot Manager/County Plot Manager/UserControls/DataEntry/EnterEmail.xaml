@@ -26,9 +26,12 @@
 				Foreground="{StaticResource brush_Base_75}"/>
 		<StackPanel Margin="5,15,5,2">
 
-			<StackPanel Orientation="Horizontal">
-
+			<StackPanel Orientation="Horizontal" MinWidth="200">
+				<TextBlock Text="Primary"/>
+				<Button Content="Add..." HorizontalAlignment="Right"/>
 			</StackPanel>
+			<ItemsControl>
+</ItemsControl>
 		</StackPanel>
 	</Grid>
 </UserControl>

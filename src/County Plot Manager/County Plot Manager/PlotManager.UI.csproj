@@ -56,6 +56,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Classes\Converters\BoolsToMarginConverter.cs" />
+    <Compile Include="Classes\Converters\IntToBoolConverter.cs" />
     <Compile Include="Classes\Converters\IntToFontSizeConverter.cs" />
     <Compile Include="Classes\Converters\IntToHeightConverter.cs" />
     <Compile Include="Styles\UserControls\CloseButton.xaml.cs">

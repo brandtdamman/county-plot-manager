@@ -43,9 +43,11 @@
   <ItemGroup>
     <Compile Include="Address.cs" />
     <Compile Include="ContactInfo.cs" />
+    <Compile Include="Email.cs" />
     <Compile Include="FlagPole.cs" />
     <Compile Include="Name.cs" />
     <Compile Include="Owner.cs" />
+    <Compile Include="PhoneNumber.cs" />
     <Compile Include="Plot.cs" />
     <Compile Include="PlotGroup.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
