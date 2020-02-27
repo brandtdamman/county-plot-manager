@@ -10,7 +10,7 @@ namespace PlotManager.Model
 	{
 		public Address Address { get; set; }
 		public Dictionary<string, int> PhoneNumbers { get; set; }
-		public Dictionary<string, string> emails { get; set; }
+		public Dictionary<string, string> Emails { get; set; }
 
 	}
 }
