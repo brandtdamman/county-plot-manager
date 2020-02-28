@@ -26,14 +26,15 @@
 				Foreground="{StaticResource brush_Base_75}"/>
 		<StackPanel Margin="5,15,5,2">
 
-				<Button Content="Add..." HorizontalAlignment="Right"/>
+			<Button Content="Add..." HorizontalAlignment="Right"
+							Style="{StaticResource ButtonCommand}" Margin="-5"/>
 			<ItemsControl ItemsSource="{Binding Path=Emails, FallbackValue=123}">
 				<ItemsControl.ItemTemplate>
 					<DataTemplate>
 						<local:Email/>
 					</DataTemplate>
-</ItemsControl.ItemTemplate>
-</ItemsControl>
+				</ItemsControl.ItemTemplate>
+			</ItemsControl>
 		</StackPanel>
 	</Grid>
 </UserControl>
