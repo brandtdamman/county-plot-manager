@@ -74,11 +74,20 @@
     <Compile Include="UserControls\DataEntry\Email.xaml.cs">
       <DependentUpon>Email.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\DataEntry\EnterAddress.xaml.cs">
+      <DependentUpon>EnterAddress.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\DataEntry\EnterEmail.xaml.cs">
       <DependentUpon>EnterEmail.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\DataEntry\EnterPhone.xaml.cs">
+      <DependentUpon>EnterPhone.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\DataEntry\Name.xaml.cs">
       <DependentUpon>Name.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\DataEntry\Phone.xaml.cs">
+      <DependentUpon>Phone.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControls\DataEntry\PlotOwners.xaml.cs">
       <DependentUpon>PlotOwners.xaml</DependentUpon>
@@ -170,11 +179,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="UserControls\DataEntry\EnterAddress.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="UserControls\DataEntry\EnterEmail.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="UserControls\DataEntry\EnterPhone.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="UserControls\DataEntry\Name.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\DataEntry\Phone.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
