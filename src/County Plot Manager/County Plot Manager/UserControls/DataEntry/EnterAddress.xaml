@@ -24,7 +24,7 @@
 	<Grid>
 		<TextBlock Text="Address" FontSize="20" Margin="2,-3,0,0" 
 				Foreground="{StaticResource brush_Base_75}"/>
-			<StackPanel Margin="5,20,5,5">
+			<StackPanel Margin="10,20,10,10">
 				<TextBlock Text="Address Line 1"/>
 				<TextBox Text="{Binding Path=AddressLine1}"/>
 				<TextBlock Text="Address Line 2"/>
