@@ -26,17 +26,17 @@
 				Foreground="{StaticResource brush_Base_75}"/>
 			<StackPanel Margin="10,20,10,10">
 				<TextBlock Text="Address Line 1"/>
-				<TextBox Text="{Binding Path=AddressLine1}"/>
+				<TextBox Text="{Binding Path=AddressLine1}" TabIndex="3"/>
 				<TextBlock Text="Address Line 2"/>
-				<TextBox Text="{Binding Path=AddressLine2}"/>
+				<TextBox Text="{Binding Path=AddressLine2}" TabIndex="4"/>
 				<TextBlock Text="City"/>
-				<TextBox Text="{Binding Path=City}"/>
+				<TextBox Text="{Binding Path=City}" TabIndex="5"/>
 				<TextBlock Text="State"/>
-				<TextBox Text="{Binding Path=State}"/>
+				<TextBox Text="{Binding Path=State}" TabIndex="6"/>
 				<TextBlock Text="Zip Code"/>
-				<TextBox Text="{Binding Path=ZipCode}"/>
+				<TextBox Text="{Binding Path=ZipCode}" TabIndex="7"/>
 				<TextBlock Text="Country"/>
-				<TextBox Text="{Binding Path=Country}"/>
+				<TextBox Text="{Binding Path=Country}" TabIndex="8"/>
 			</StackPanel>
 	</Grid>
 </UserControl>

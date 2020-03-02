@@ -28,12 +28,14 @@
 	<StackPanel Orientation="Horizontal">
 		<ComboBox MinWidth="75" VerticalAlignment="Center" Margin="5"
 							ItemsSource="{Binding Path=PhoneTypes}"
-							SelectedItem="{Binding Path=PhoneType}"/>
-		<TextBox Margin="5" Text="{Binding Path=PhoneNumber.Number}" MinWidth="150"/>
+							SelectedItem="{Binding Path=PhoneType}" TabIndex="9"/>
+		<TextBox Margin="5" Text="{Binding Path=PhoneNumber.Number}" MinWidth="150"
+							TabIndex="10"/>
 		<TextBlock Text="primary" VerticalAlignment="Center" Margin="5,2,0,5"/>
-		<RadioButton VerticalAlignment="Center" Margin="5"
+		<RadioButton VerticalAlignment="Center" Margin="5" TabIndex="11"
 		IsChecked="{Binding Path=PhoneNumber.IsPrimary, 
-								Converter={StaticResource IntToBoolConverter}}"/>
+								Converter={StaticResource IntToBoolConverter}}"
+								GroupName="phone"/>
 	</StackPanel>
 
 

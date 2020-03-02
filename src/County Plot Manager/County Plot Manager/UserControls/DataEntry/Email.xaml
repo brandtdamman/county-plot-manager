@@ -27,10 +27,11 @@
 
 	<StackPanel Orientation="Horizontal">
 		<TextBlock Text="email" VerticalAlignment="Center" Margin="5"/>
-		<TextBox Margin="5" Text="{Binding EmailAddress}" MinWidth="150"/>
+		<TextBox Margin="5" Text="{Binding EmailAddress}" MinWidth="150" TabIndex="12"/>
 		<TextBlock Text="primary" VerticalAlignment="Center" Margin="5,2,0,5"/>
-		<RadioButton VerticalAlignment="Center" Margin="5"
-		IsChecked="{Binding IsPrimary, Converter={StaticResource IntToBoolConverter}}"/>
+		<RadioButton VerticalAlignment="Center" Margin="5" TabIndex="13"
+		IsChecked="{Binding IsPrimary, Converter={StaticResource IntToBoolConverter}}" 
+		GroupName="email"/>
 	</StackPanel>
 
 

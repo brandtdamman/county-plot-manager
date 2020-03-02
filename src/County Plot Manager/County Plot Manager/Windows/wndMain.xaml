@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PlotManager.UI.Windows"
+				xmlns:ucde="clr-namespace:PlotManager.UI.UserControls.DataEntry"
         mc:Ignorable="d" Style="{DynamicResource MyWindowStyle}"
         Title="Plot Manager" Height="450" Width="800">
 
@@ -19,6 +20,7 @@
 			<TabItem Header="Data Entry">
 				<TabControl TabStripPlacement="Left">
 					<TabItem Header="Plot Owners">
+						<ucde:ContactInfo/>
 					</TabItem>
 					<TabItem Header="Tenants">
 					</TabItem>
