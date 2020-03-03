@@ -376,6 +376,52 @@
 		</Setter>
 	</Style>
 
+	<!--Close button style on the main window title bar.-->
+	<Style x:Key="ButtonDelete"
+				 TargetType="{x:Type Button}">
+		<Setter Property="HorizontalAlignment"
+						Value="Left"/>
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="{x:Type Button}">
+					<Grid x:Name="borderMain" Background="#01FFFFFF"
+									Height="20" Width="20">
+						<Viewbox Width="14" Height="14" Stretch="Uniform">
+						<Path x:Name="pathGlyph" 
+									Fill="{StaticResource brush_Base_Dark}" StrokeThickness="0"
+									Data="M 3 3 L 7 3 L 12.5 9.9667 L 18 3 L 22 3 
+												L 14.5 12.5 L 22 22 L 18 22 L 12.5 15.0333 
+												L 7 22 L 3 22 L 10.5 12.5 L 3 3 z"/>
+						</Viewbox>
+						<Border x:Name="borderDisabled"
+										Visibility="Hidden"
+										Background="{StaticResource brush_Disabled}"/>
+					</Grid>
+					<ControlTemplate.Triggers>
+						<Trigger Property="IsMouseOver"
+										 Value="True">
+							<Setter TargetName="pathGlyph"
+											Property="Fill"
+											Value="{StaticResource brush_Base_75}"/>
+						</Trigger>
+						<Trigger Property="IsPressed"
+										 Value="True">
+							<Setter TargetName="pathGlyph"
+											Property="Fill"
+											Value="{StaticResource brush_Base_Dark}"/>
+						</Trigger>
+						<Trigger Property="IsEnabled"
+										 Value="False">
+							<Setter TargetName="borderDisabled"
+											Property="Visibility"
+											Value="Visible"/>
+						</Trigger>
+					</ControlTemplate.Triggers>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+
 	<!--Style for the <- 'Arrow Left' button.-->
 	<Style x:Key="ButtonArrowLeft"
            TargetType="{x:Type Button}">

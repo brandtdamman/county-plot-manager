@@ -4,7 +4,6 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
 						 xmlns:conv="clr-namespace:PlotManager.UI.Classes.Converters"
-             xmlns:local="clr-namespace:PlotManager.UI.UserControls.DataEntry"
 						Background="{StaticResource brush_Base_25}"
              mc:Ignorable="d">
 
@@ -36,6 +35,7 @@
 		IsChecked="{Binding Path=PhoneNumber.IsPrimary, 
 								Converter={StaticResource IntToBoolConverter}}"
 								GroupName="phone"/>
+		<Button Style="{StaticResource ButtonDelete}" Margin="0,0,5,0"/>
 	</StackPanel>
 
 
