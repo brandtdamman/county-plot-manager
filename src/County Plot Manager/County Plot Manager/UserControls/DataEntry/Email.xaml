@@ -32,6 +32,7 @@
 		<RadioButton VerticalAlignment="Center" Margin="5" TabIndex="13"
 		IsChecked="{Binding IsPrimary, Converter={StaticResource IntToBoolConverter}}" 
 		GroupName="email"/>
+		<Button Style="{StaticResource ButtonDelete}" Margin="0,0,5,0"/>
 	</StackPanel>
 
 
