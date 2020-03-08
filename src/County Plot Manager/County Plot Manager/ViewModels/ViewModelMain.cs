@@ -1,4 +1,5 @@
-﻿using PlotManager.UI.Classes.Base;
+﻿using PlotManager.Model;
+using PlotManager.UI.Classes.Base;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,45 +12,65 @@ namespace PlotManager.UI.ViewModels
 	public class ViewModelMain : ViewModelBase
 	{
 
-		private bool CanDeleteEmail = true;
-		RelayCommand commandDeleteEmail;
-		public ICommand CommandDeleteEmail
+		private List<PhoneNumber> phoneNumbers;
+		public List<PhoneNumber> PhoneNumbers
 		{
 			get
 			{
-				if (commandDeleteEmail == null)
+				return phoneNumbers;
+			}
+			set
+			{
+				if (value != phoneNumbers)
 				{
-					commandDeleteEmail = new RelayCommand(param => DeleteEmail(),
-					param => CanDeleteEmail);
+					phoneNumbers = value;
+					NotifyPropertyChanged("PhoneNumbers");
 				}
-				return commandDeleteEmail;
 			}
 		}
 
+		private PhoneNumber phone;
+		public PhoneNumber Phone
+		{
+			get
+			{
+				return phone;
+			}
+			set
+			{
+				if (value != phone)
+				{
+					phone = value;
+					NotifyPropertyChanged("Phone");
+				}
+			}
+		}
+
+
 		private bool CanDeletePhone = true;
-		RelayCommand commandDeletePhone;
+		RelayCommand<object> commandDeletePhone;
 		public ICommand CommandDeletePhone
 		{
 			get
 			{
 				if (commandDeletePhone == null)
 				{
-					commandDeletePhone = new RelayCommand(param => DeletePhone(),
+					commandDeletePhone = new RelayCommand<object>
+					(param => DeletePhone(param),
 					param => CanDeletePhone);
 				}
 				return commandDeletePhone;
 			}
 		}
 
-
-		private void DeleteEmail()
+		private void DeletePhone(object parameter)
 		{
-
+			PhoneNumber pn;
+			pn = (PhoneNumber)parameter;
+			PhoneNumbers.Remove(pn);
 		}
-		private void DeletePhone()
-		{
 
-		}
+
 
 	}
 }

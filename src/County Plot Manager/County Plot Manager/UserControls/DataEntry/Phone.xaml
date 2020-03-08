@@ -28,11 +28,11 @@
 		<ComboBox MinWidth="75" VerticalAlignment="Center" Margin="5"
 							ItemsSource="{Binding Path=PhoneTypes}"
 							SelectedItem="{Binding Path=PhoneType}" TabIndex="9"/>
-		<TextBox Margin="5" Text="{Binding Path=PhoneNumber.Number}" MinWidth="150"
+		<TextBox Margin="5" Text="{Binding Path=Phone.Number}" MinWidth="150"
 							TabIndex="10"/>
 		<TextBlock Text="primary" VerticalAlignment="Center" Margin="5,2,0,5"/>
 		<RadioButton VerticalAlignment="Center" Margin="5" TabIndex="11"
-		IsChecked="{Binding Path=PhoneNumber.IsPrimary, 
+		IsChecked="{Binding Path=Phone.IsPrimary, 
 								Converter={StaticResource IntToBoolConverter}}"
 								GroupName="phone"/>
 		<Button Style="{StaticResource ButtonDelete}" Margin="0,0,5,0"/>
