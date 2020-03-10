@@ -29,6 +29,23 @@ namespace PlotManager.UI.ViewModels
 			}
 		}
 
+		private List<Email> emails;
+		public List<Email> Emails
+		{
+			get
+			{
+				return emails;
+			}
+			set
+			{
+				if (value != emails)
+				{
+					emails = value;
+					NotifyPropertyChanged("Emails");
+				}
+			}
+		}
+
 		private PhoneNumber phone;
 		public PhoneNumber Phone
 		{
@@ -42,6 +59,23 @@ namespace PlotManager.UI.ViewModels
 				{
 					phone = value;
 					NotifyPropertyChanged("Phone");
+				}
+			}
+		}
+
+		private Email email;
+		public Email Email
+		{
+			get
+			{
+				return email;
+			}
+			set
+			{
+				if (value != email)
+				{
+					email = value;
+					NotifyPropertyChanged("Email");
 				}
 			}
 		}
