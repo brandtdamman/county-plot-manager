@@ -27,8 +27,11 @@
 		<StackPanel Margin="5">
 
 			<Button Content="Add..." HorizontalAlignment="Right"
-							Style="{StaticResource ButtonCommand}" Margin="-5" IsTabStop="False"/>
-			<ItemsControl ItemsSource="{Binding Path=PhoneNumbers, FallbackValue=1}" IsTabStop="False">
+							Style="{StaticResource ButtonCommand}" 
+							Margin="-5" IsTabStop="False"
+							Command="{Binding Path=CommandAddPhone}"/>
+			<ItemsControl ItemsSource="{Binding Path=PhoneNumbers, FallbackValue=1}" 
+										IsTabStop="False">
 				<ItemsControl.ItemTemplate>
 					<DataTemplate>
 						<local:Phone/>

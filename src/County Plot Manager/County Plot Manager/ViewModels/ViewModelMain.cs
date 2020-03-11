@@ -12,7 +12,7 @@ namespace PlotManager.UI.ViewModels
 	public class ViewModelMain : ViewModelBase
 	{
 
-		private List<PhoneNumber> phoneNumbers;
+		private List<PhoneNumber> phoneNumbers = new List<PhoneNumber>();
 		public List<PhoneNumber> PhoneNumbers
 		{
 			get
@@ -80,6 +80,20 @@ namespace PlotManager.UI.ViewModels
 			}
 		}
 
+		private bool CanAddPhone = true;
+		RelayCommand commandAddPhone;
+		public ICommand CommandAddPhone
+		{
+			get
+			{
+				if (commandAddPhone == null)
+				{
+					commandAddPhone = new RelayCommand(param => AddPhone(),
+					param => CanAddPhone);
+				}
+				return commandAddPhone;
+			}
+		}
 
 		private bool CanDeletePhone = true;
 		RelayCommand<object> commandDeletePhone;
@@ -95,6 +109,15 @@ namespace PlotManager.UI.ViewModels
 				}
 				return commandDeletePhone;
 			}
+		}
+
+
+		private void AddPhone()
+		{
+			List<PhoneNumber> lst = PhoneNumbers;
+			lst.Add(new PhoneNumber());
+			PhoneNumbers = lst;
+			//PhoneNumbers.Add(new PhoneNumber());
 		}
 
 		private void DeletePhone(object parameter)
