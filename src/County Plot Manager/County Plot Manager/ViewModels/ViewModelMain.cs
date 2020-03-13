@@ -117,14 +117,11 @@ namespace PlotManager.UI.ViewModels
 			List<PhoneNumber> lst = PhoneNumbers;
 			lst.Add(new PhoneNumber());
 			PhoneNumbers = lst;
-			//PhoneNumbers.Add(new PhoneNumber());
 		}
 
 		private void DeletePhone(object parameter)
 		{
-			PhoneNumber pn;
-			pn = (PhoneNumber)parameter;
-			PhoneNumbers.Remove(pn);
+			PhoneNumbers.Remove((PhoneNumber)parameter);
 		}
 
 
