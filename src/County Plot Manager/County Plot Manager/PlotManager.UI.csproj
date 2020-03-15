@@ -89,9 +89,6 @@
     <Compile Include="UserControls\DataEntry\Phone.xaml.cs">
       <DependentUpon>Phone.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\DataEntry\PlotOwners.xaml.cs">
-      <DependentUpon>PlotOwners.xaml</DependentUpon>
-    </Compile>
     <Compile Include="UserControls\FlagPole.xaml.cs">
       <DependentUpon>FlagPole.xaml</DependentUpon>
     </Compile>
@@ -196,10 +193,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UserControls\DataEntry\Phone.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="UserControls\DataEntry\PlotOwners.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
