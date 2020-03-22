@@ -80,6 +80,12 @@ namespace PlotManager.UI.ViewModels
 			}
 		}
 
+
+// ##############################################
+//  Commands
+// ##############################################
+
+
 		private bool CanAddPhone = true;
 		RelayCommand commandAddPhone;
 		public ICommand CommandAddPhone
@@ -111,6 +117,10 @@ namespace PlotManager.UI.ViewModels
 			}
 		}
 
+
+// ######################################################
+//    Methods
+// ######################################################
 
 		private void AddPhone()
 		{
