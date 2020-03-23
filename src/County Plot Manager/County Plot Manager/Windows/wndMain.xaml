@@ -20,7 +20,7 @@
 			<TabItem Header="Data Entry">
 				<TabControl TabStripPlacement="Left">
 					<TabItem Header="Plot Owners">
-						<ucde:ContactInfo/>
+						<ucde:PlotOwners/>
 					</TabItem>
 					<TabItem Header="Tenants">
 					</TabItem>
