@@ -8,8 +8,12 @@
 
 
 	<Grid>
-		<TextBlock Text="Tenant" FontSize="20" Margin="2,-3,0,0" 
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+		</Grid.RowDefinitions>
+		<TextBlock Grid.Row="0" Text="Tenant" FontSize="20" Margin="2,-3,0,0" 
 				Foreground="{StaticResource brush_Base_75}"/>
-
+		<ComboBox Grid.Row="1"/>
 	</Grid>
 </UserControl>
