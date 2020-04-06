@@ -12,5 +12,11 @@ namespace PlotManager.Model
     public string Number { get; set; }
     public string Description { get; set; }
 
+    public PhoneNumber(int primary = 0, string number = "515.555.5555", string description = "mobile")
+    {
+      IsPrimary = primary;
+      Number = number;
+      Description = description;
+    }
   }
 }
